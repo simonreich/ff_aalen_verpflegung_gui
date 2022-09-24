@@ -66,6 +66,7 @@ Listet:
 - Ansprechpartner mit Mailadresse
 - Softwareversion
 - Datum vom letzten Softwareupdate
+- Neustart-Button (Startet Raspberry Pi neu)
 
 ## Softwareupdates
 
@@ -118,11 +119,12 @@ Im selben Verzeichnis werden die Symbolbilder als jpg- oder png-Datei abgelegt.
 TODO: Wie kommen die Softwarekondigurationen auf den Raspberry Pi?
 
 - Ebenfalls über ein git-Repository
-- Über ein usb-Stick
-  - Wird jedem usb-Stick vertraut?
-  - Update-Mode, der PIN-Eingabe benötigt.
+  - Automatisiert, z.B. jede Nacht
+- Über einen USB-Stick
+  - Updatedialog, der aus Hilfe-Dialog geöffnet wird?
 - Per Mail von Account Ansprechpartner.
-  - GUI benötigt eingenen Mail-Account.
+  - Automatisiert, z.B. jede Nacht
+  - GUI benötigt eigenen Mail-Account.
   - Passwort muss im Plain-Text hinterlegt werden.
 
 ## Datenfluss
@@ -135,11 +137,10 @@ TODO: Wie kommen die Softwarekondigurationen auf den Raspberry Pi?
 
 Jede Transaktion (UID, IID, Datum, Zeit, Preis) wird lokal in einer SQlite3-Datenbank abgelegt.
 
-TODO: Wie lange werden Daten aufgehoben?
-
 ## Datenexport
 
 TODO: 
 - Wohin sollen die Datenexportiert werden?
 - In welchem Format?
-- Sollen die lokalen Daten nach dem Export gelöscht werden?
+- Sollen die lokalen Daten nach dem Export gelöscht werden? Wie lange werden Daten aufgehoben?
+
