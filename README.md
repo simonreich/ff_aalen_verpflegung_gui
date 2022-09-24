@@ -79,14 +79,14 @@ Falls das der Fall ist, wird sie automatisch installiert und die Software neu ge
 
 ## Softwarekonfiguration
 
-Alle vom Fachbereich vorzunehmenden Konfigurationen werden zentral in einer Datei abgelegt, z.B. 'config-items.json':
+Alle vom Fachbereich vorzunehmenden Konfigurationen werden zentral in einer Datei abgelegt, z.B. `config-items.json`:
 
 ```json
 {
   "ansprechpartner": 
     {
       "name": "Max Mustermann",
-      :email": "mmustermann@example.com"
+      "email": "mmustermann@example.com"
     },
   "items": [
     {
@@ -106,7 +106,7 @@ Alle vom Fachbereich vorzunehmenden Konfigurationen werden zentral in einer Date
     },
     {
       "name": "Apfelschorle",
-      "logo": "apfelschorle.jpg",
+      "logo": "apfelschorle.png",
       "preis": 1.00
     }
   ]
@@ -120,15 +120,15 @@ TODO: Wie kommen die Softwarekondigurationen auf den Raspberry Pi?
 - Ebenfalls über ein git-Repository
 - Über ein usb-Stick
   - Wird jedem usb-Stick vertraut?
-  - Wie wird die Echtheit der Daten überprüft?
+  - Update-Mode, der PIN-Eingabe benötigt.
 - Per Mail von Account Ansprechpartner.
   - GUI benötigt eingenen Mail-Account.
   - Passwort muss im Plain-Text hinterlegt werden.
 
 ## Datenfluss
 
-1. Nutzer wählt Item (IID) 
-2. Nutzer identifiziert sich über RFID-Leser (UID) 
+1. Nutzer wählt Item (IID, IID ist Name vom Getränk) 
+2. Nutzer identifiziert sich über RFID-Leser (UID, UID ist gelesener RFID-Code) 
 3. UID, IID, Datum, Zeit, Preis wird in Datenbank gespeichert
 
 ## Datenspeicher
