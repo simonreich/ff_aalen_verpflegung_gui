@@ -39,9 +39,7 @@ Wird das Symbolbild auf der SD-Karte nicht gefunden, wird ein Default-Bild angez
 In der linken oberen Ecke existiert ein Hilfe-Symbol.
 Bei Klick öffnet sich der Hilfe-Dialog.
 
-Daneben existiert ein Bildschirm-Aus Symbol.
-Bei Klick wird der externe Monitor abgeschaltet.
-Nach 10 Minuten inaktivität wird der externe Monitor ebenfalls abgeschaltet.
+Nach 10 Minuten Inaktivität wird der externe Monitor abgeschaltet.
 
 ### Auswahl-Dialog
 
@@ -116,7 +114,7 @@ Alle vom Fachbereich vorzunehmenden Konfigurationen werden zentral in einer Date
 
 Im selben Verzeichnis werden die Symbolbilder als jpg- oder png-Datei abgelegt.
 
-TODO: Wie kommen die Softwarekondigurationen auf den Raspberry Pi?
+TODO: Wie kommen die Softwarekonfigurationen auf den Raspberry Pi?
 
 - Ebenfalls über ein git-Repository
   - Automatisiert, z.B. jede Nacht
@@ -140,6 +138,7 @@ Jede Transaktion (UID, IID, Datum, Zeit, Preis) wird lokal in einer SQlite3-Date
 ## Datenexport
 
 TODO: 
+- Welches Ereignis löst den Datenexport aus? Ist er periodisch, z.B. jeden Monatsanfang?
 - Wohin sollen die Datenexportiert werden?
 - In welchem Format?
 - Sollen die lokalen Daten nach dem Export gelöscht werden? Wie lange werden Daten aufgehoben?
